@@ -1,6 +1,6 @@
 /*red #dc3545 Dark gray #343a40  gray #6c757d  light white #f8f9fa*/
 body {
-    background: #F3F6FA;
+    background: red;
 }
 
 p {
@@ -10,6 +10,50 @@ p {
     line-height: 1.7em;
     color: #999;
 }
+
+.content-block {
+    flex: 1;
+}
+
+.introduction {
+    background-image: url('Assets/coverBackground.webp');
+    background-size: 100% 100%;    
+    background-position: center;
+    color: black;
+    position: relative;
+    padding-bottom: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.about {
+    background-color: purple;
+    height: 500px;
+}
+
+.skills {
+    background-color: yellow;
+    height: 500px;
+}
+
+.projects {
+    background-color: blue;
+    height: 500px;
+}
+
+.contact {
+    background-color: green;
+    height: 500px;
+}
+
 
 a,
 a:hover,
@@ -48,6 +92,7 @@ a:focus {
 .wrapper {
     display: flex;
     width: 100%;
+    background-color: blue;
 }
 
 #sidebar {
@@ -57,12 +102,27 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #343a40;
     color: #fff;
     transition: all 0.3s;
     /* Horizonal and Vertical Placement*/
     text-align: center; 
-    justify-content: center;
+}
+
+#sidebar #name {
+	display: flex;
+	height: 35vh;
+	flex-direction: column;
+    justify-content: flex-end;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+#sidebar #name img {
+    width: 10em; 
+    height: 10em; 
+    object-fit: cover;
+    background-color: #343a40;
+    border-radius: 50%; 
 }
 
 #sidebar.active {
@@ -74,9 +134,15 @@ a:focus {
     background: white;
 }
 
+
 #sidebar ul.components {
     border-bottom: 1px solid #47748b;
+	display: flex;
+	height: 65vh;
+	flex-direction: column;
+    background-color: black; /* TODO: REMOVE */
 }
+
 
 #sidebar ul p {
     color: #fff;
@@ -87,17 +153,18 @@ a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    text-align: center;
 }
 
 #sidebar ul li a:hover {
-    color: white;
-    background:#0092D1;
+    color:white;
+    background:#dc3545;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #0092D1;
+    background: #dc3545;
 }
 
 a[data-toggle="collapse"] {
@@ -115,30 +182,36 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #00508B;
+    background: #dc3545;
 }
 
-.menu-text {
+/* .menu-text {
    color:white;
    font-size: 24px;
    font-weight: bold;
    position: relative;
    top: 10px;
    left:5px;
-}
+} */
 
 
 .menu-btn {
-    background:#0092D1;
     margin-top: 10px;
-    color: white;
+    background-color: transparent;
+    outline: none;
+}
+.menu-btn:focus {
+    box-shadow: 0 0 0 2px transparent; 
+}
+.menu-btn:hover {
+    transform: scale(1.1); 
 }
 
-.menu-header {
+/* .menu-header {
     width:100%;
     height:64px;
     background: #0092D1;
-}
+} */
 
 
 
@@ -148,6 +221,7 @@ ul ul a {
 ----------------------------------------------------- */
 
 #content {
+    flex-grow: 1;
     width: calc(100% - 250px);
     min-height: 100vh;
     transition: all 0.3s;

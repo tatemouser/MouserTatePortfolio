@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>bootstrap4-responsive-sidebar</title>
+    <title>Mouser Portfolio</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -23,55 +23,59 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div>
-                <h3>Tate Mouser</h3>
-                <h4 style="color: #6c757d;">Available for work</h4>
+                <a href="#" id="name"> 
+                    <span style="color: white; font-size: 1.8em;font-weight: bold;">Tate Mouser</span> 
+                    <span style="color: #6c757d; font-size: 1.3em;">Available for work</span> 
+                    <span style="color: black;"><img src="Assets/profilePicture.jpg"></span>
+                    
+                </a>
             </div>
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#section-introduction">Home</a>
                 </li>
                 <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">About</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">sub-menu1</a>
-                        </li>
-                        <li>
-                            <a href="#">sub-menu2</a>
-                        </li>
-                        <li>
-                            <a href="#">sub-menu3</a>
-                        </li>
-                    </ul>
+                    <a href="#section-about">About</a>
                 </li>
                 <li>
-                    <a href="#">Skills</a>
-                </li>
-                
-                <li>
-                    <a href="#">Projects</a>
+                    <a href="#section-skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#">Coding Challenges</a>
+                    <a href="#section-projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                    <a href="#section-contact">Contact</a>
             </ul>
         </nav>
 
         <!-- Page Content  -->
         <div id="content">
-            <div class="menu-header">
+
+
+            <div class="content-block introduction" id="section-introduction">
                 <button type="button" id="sidebarCollapse" class="btn menu-btn">
-                    <img src="nav.png" alt="Menu">
+                    <img src="Assets/nav.png" alt="Menu">
                 </button>
-                <span class="menu-text">Page Title</span>
+                <h2>Tate Mouser</h2>
             </div>
+            
+            <div class="content-block about" id="section-about">
+                <h2>about</h2>
+            </div>
+            
+            <div class="content-block skills" id="section-skills">
+                <h2>skills</h2>
+            </div>
+            
+            <div class="content-block projects" id="section-projects">
+                <h2>projects</h2>
+            </div>
+            
+            <div class="content-block contact" id="section-contact">
+                <h2>contact</h2>
+            </div>
+
         </div>
     </div>
 
@@ -97,5 +101,4 @@
         });
     </script>
 </body>
-
 </html>
