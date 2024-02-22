@@ -1,6 +1,15 @@
 /*red #dc3545 Dark gray #343a40  gray #6c757d  light white #f8f9fa*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: red;
+}
+
+::selection {
+    color: white;
+    background-color: #dc3545; 
 }
 
 p {
@@ -38,22 +47,22 @@ p {
 
 .about {
     background-color: purple;
-    height: 500px;
+    height: 100vh;
 }
 
 .skills {
     background-color: yellow;
-    height: 500px;
+    height: 100vh;
 }
 
 .projects {
     background-color: blue;
-    height: 500px;
+    height: 100vh;
 }
 
 .contact {
     background-color: green;
-    height: 500px;
+    height: 100vh;
 }
 
 
