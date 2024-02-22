@@ -13,7 +13,6 @@ body {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -38,7 +37,7 @@ p {
     flex-direction: column;
     height: 100%;
     font-weight: bold;
-    padding-bottom: 10%;  
+    padding-bottom: 30%;  
     line-height: 1;
 } 
 
@@ -170,13 +169,13 @@ a:focus {
 
 #sidebar ul li a:hover {
     color:white;
-    background:#dc3545;
+    background: #dc3545;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
-    background: #dc3545;
+    color: #dc3545;
+    background: none;
 }
 
 a[data-toggle="collapse"] {
@@ -196,6 +195,11 @@ ul ul a {
     padding-left: 30px !important;
     background: #dc3545;
 }
+
+
+
+
+
 
 /* .menu-text {
    color:white;
