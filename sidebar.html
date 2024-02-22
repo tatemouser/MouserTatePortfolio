@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Mouser Portfolio</title>
+    <title>Tate Mouser Portfolio</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="menu.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
 </head>
 
 <body>
@@ -24,10 +23,12 @@
         <nav id="sidebar">
             <div>
                 <a href="#" id="name"> 
-                    <span style="color: white; font-size: 1.8em;font-weight: bold;">Tate Mouser</span> 
-                    <span style="color: #6c757d; font-size: 1.3em;">Available for work</span> 
-                    <span style="color: black;"><img src="Assets/profilePicture.jpg"></span>
-                    
+                    <span style="color: white; font-size: 1.8em;font-weight: bold;">
+                        Tate Mouser</span> 
+                    <span style="color: #6c757d; font-size: 1.1em; margin-bottom: 1em;">
+                        Available for work</span> 
+                    <span style="color: black;">
+                        <img src="Assets/profilePicture.jpg"></span>
                 </a>
             </div>
 
@@ -51,14 +52,19 @@
 
         <!-- Page Content  -->
         <div id="content">
-
-
             <div class="content-block introduction" id="section-introduction">
-                <button type="button" id="sidebarCollapse" class="btn menu-btn">
+                <button type="button" id="sidebarCollapse" class="btn menu-btn navButton">
                     <img src="Assets/nav.png" alt="Menu">
                 </button>
-                <h2>Tate Mouser</h2>
+                
+                <div class = "nameTop">
+                    <a style="font-size: 5.5em;">
+                    Tate <span style="color: #dc3545;">Mouser</span></a><br>
+                    <a style="font-size: 3.5em">
+                    I'm a Developer</a>
+                </div>
             </div>
+            
             
             <div class="content-block about" id="section-about">
                 <h2>about</h2>
@@ -75,7 +81,6 @@
             <div class="content-block contact" id="section-contact">
                 <h2>contact</h2>
             </div>
-
         </div>
     </div>
 
@@ -88,7 +93,9 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
+    
+    
+        <script type="text/javascript">
         $(document).ready(function () {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
@@ -99,6 +106,6 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
         });
-    </script>
+        </script>
 </body>
 </html>
