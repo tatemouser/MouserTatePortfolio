@@ -19,35 +19,73 @@ p {
     color: #999;
 }
 
-.content-block {
-    flex: 1;
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    flex-grow: 1;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
 }
 
 .introduction {
+    position: relative;
+    height: 100vh;
+}
+
+.introduction::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('Assets/coverBackground.webp');
-    background-size: 100% 100%;     
-    height: 100vh; /* Set background to user screen size */
+    background-size: 100% 100%;
+    filter: brightness(30%);
+    z-index: -1;
 }
 
 
-.introduction .nameTop {
+/*TODO: Reset naming convention and pulling from html, dont use .nametop, look to use ::Before */
+.introductionName {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
     font-weight: bold;
-    padding-bottom: 30%;  
+    padding-bottom: 30%;
     line-height: 1;
-} 
+    /* Ensure stacking context for z-index, bring forward with 1*/
+    position: relative; 
+    z-index: 1; 
+}
+
+
+
+
 
 
 
 
 .about {
-    background-color: purple;
+    background-color: white;
     height: 100vh;
 }
+
 
 .skills {
     background-color: yellow;
@@ -65,35 +103,7 @@ p {
 }
 
 
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
 
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -116,6 +126,7 @@ a:focus {
     transition: all 0.3s;
     /* Horizonal and Vertical Placement*/
     text-align: center; 
+    padding-top: 10%;
 }
 
 
@@ -196,21 +207,6 @@ ul ul a {
     background: #dc3545;
 }
 
-
-
-
-
-
-/* .menu-text {
-   color:white;
-   font-size: 24px;
-   font-weight: bold;
-   position: relative;
-   top: 10px;
-   left:5px;
-} */
-
-
 .menu-btn {
     margin-top: 10px;
     background-color: transparent;
@@ -223,32 +219,14 @@ ul ul a {
     transform: scale(1.1); 
 }
 
-/* .menu-header {
-    width:100%;
-    height:64px;
-    background: #0092D1;
-} */
-
-
-
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
-#content {
-    flex-grow: 1;
-    width: calc(100% - 250px);
-    min-height: 100vh;
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
     transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
-#content.active {
-    width: 100%;
-}
 
 /* ---------------------------------------------------
     MEDIAQUERIES

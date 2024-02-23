@@ -24,7 +24,7 @@
             <div>
                 <a href="#" id="name"> 
                     <span style="color: black;">
-                        <img src="Assets/profilePicture.jpg"></span>
+                        <img src="Assets/profilePicture.webp"></span>
                     <span style="color: white; font-size: 1.4em; font-weight: bold; margin-top: .5em;">
                         Tate Mouser</span> 
                     <span style="color: #6c757d; font-size: .9em;">
@@ -33,6 +33,7 @@
             </div>
 
             <ul class="list-unstyled components">
+                <!-- Auto selects when page loaded -->
                 <li class="active">
                     <a href="#section-introduction">Home</a>
                 </li>
@@ -52,12 +53,13 @@
 
         <!-- Page Content  -->
         <div id="content">
+            
             <div class="content-block introduction" id="section-introduction">
                 <button type="button" id="sidebarCollapse" class="btn menu-btn navButton">
                     <img src="Assets/nav.png" alt="Menu">
                 </button>
                 
-                <div class = "nameTop">
+                <div class = "introductionName">
                     <a style="font-size: 5.5em;">
                     Tate <span style="color: #dc3545;">Mouser</span></a><br>
                     <a style="font-size: 3.5em">
@@ -65,12 +67,27 @@
                 </div>
             </div>
             
-            
-            <div class="content-block about" id="section-about">
-                <h2>about</h2>
-            </div>
-            
-            <div class="content-block skills" id="section-skills">
+            <div class="content-block about" id="section-about">                    
+
+
+                <a style="font-size: 2.5em; color: black; font-weight: bold;">
+                About Me</a>
+                <a style="font-size: 1.2em; color: #6c757d">
+                Get to know me</a>
+
+                <img src="Assets/profilePicture.webp" alt="Menu" style="width: 20em; height:30em;">
+                <a>I'm Robert Becket, a Full Stack Web Developer<a>
+                <a>I am a software developer and tester based in the United States, 
+                    and I have been building business applications for years, which bring
+                    companies' ideas to life. I help convert a vision into meaningful and
+                    useful software products. Having the ability to transform 
+                    requirements into useful software helps me prioritize tasks, 
+                    iterate fast and deliver faster. Take a look at my project work 
+                    and let's see if we can work together on your next project</a>
+                <a> RESUME BUTTON / LOCATION / EMAIL / PHONE</a> 
+            </div>            
+
+            <div class="content-block skills" id="section-skills">                    
                 <h2>skills</h2>
             </div>
             
@@ -82,6 +99,7 @@
                 <h2>contact</h2>
             </div>
         </div>
+        
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
