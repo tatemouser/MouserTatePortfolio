@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: red;
+    background: white;
 }
 
 ::selection {
@@ -73,6 +73,80 @@ p {
     position: relative; 
     z-index: 1; 
 }
+
+
+#content-container {
+    padding: 8vh;
+}
+
+#section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #fff; 
+    height: 10vh;
+}
+
+#section-profile {
+    display: flex;
+    background-color: white; 
+    height: 50vh;
+}
+
+#section-resume {
+    display: flex;
+    background-color: white; 
+    height: 30vh;
+}
+
+.right-column {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.profile-picture {
+    width: 20em;
+    height: 30em;
+    border: 1px solid #ccc;
+    padding: .5vh;
+    margin-top: 2vh;
+}
+
+.description-1 {
+    color: black;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.description-2 {
+    color: #6c757d;
+    font-size: 1.4em;
+}
+
+.description-3 {
+    color: #6c757d;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 
