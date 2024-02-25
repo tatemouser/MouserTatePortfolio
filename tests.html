@@ -1,66 +1,58 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
 <head>
-    <title>
-        Wrapping an Image with the text
-    </title>
-      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
     <style>
+        /* Apply some basic styling for better presentation */
         body {
+            font-family: Arial, sans-serif;
             margin: 20px;
-            text-align: center;
         }
-        h1 {
-            color: green;
+
+        /* Create a container to hold the form elements */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
-        img {
-            float: left; 
-            margin: 5px;
+
+        /* Style for labels and inputs */
+        .form-row {
+            display: flex;
+            gap: 10px;
         }
-        p {
-            text-align: justify;
-            font-size: 25px;
+
+        label {
+            width: 100px; /* Adjust the width as needed */
+            display: inline-block;
+        }
+
+        input {
+            width: 200px; /* Adjust the width as needed */
         }
     </style>
 </head>
-  
 <body>
-    <h1>GeeksforGeeks</h1>
-      
-    <b>
-        A Computer Science
-        Portal for Geeks
-    </b>
-      
-    <div class="square">
-        <div> 
-            <img src= 
-"https://media.geeksforgeeks.org/wp-content/uploads/20190808143838/logsm.png"
-                    alt="Longtail boat in Thailand"> 
+    <div class="form-container">
+        <!-- First row with two labels and inputs side by side -->
+        <div class="form-row">
+            <label for="label1">Label 1:</label>
+            <input type="text" id="label1" name="label1">
+
+            <label for="label2">Label 2:</label>
+            <input type="text" id="label2" name="label2">
         </div>
-          
-          
-<p>
-            How many times were you frustrated while looking
-            out for a good collection of programming/algorithm
-            /interview questions? What did you expect and what
-            did you get? This portal has been created to
-            provide well written, well thought and well
-            explained solutions for selected questions.
-            An IIT Roorkee alumnus and founder of GeeksforGeeks.
-            He loves to solve programming problems in most
-            efficient ways. Apart from GeeksforGeeks, he has
-            worked with DE Shaw and Co. as a software developer 
-            and JIIT Noida as an assistant professor. It is a
-            good platform to learn programming. It is an
-            educational website. Prepare for the Recruitment
-            drive of product based companies like Microsoft,
-            Amazon, Adobe etc with a free online placement
-            preparation course.
-        </p>
-  
+
+        <!-- Second row with two labels and inputs in a column -->
+        <div class="form-row">
+            <label for="label3">Label 3:</label>
+            <input type="text" id="label3" name="label3">
+
+            <label for="label4">Label 4:</label>
+            <input type="text" id="label4" name="label4">
+        </div>
     </div>
 </body>
-  
 </html>
