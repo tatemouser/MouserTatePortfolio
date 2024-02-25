@@ -48,6 +48,7 @@
                 </li>
                 <li>
                     <a href="#section-contact">Contact</a>
+
             </ul>
         </nav>
 
@@ -101,26 +102,34 @@
                         TODO</a>
                 </div>
             </div>
-        </div>    
-                
 
-
-
-
-
-            
             <div class="content-block skills" id="section-skills">                    
-                <h2>skills</h2>
+                <div class="heading">My Skills</div>
+                <div class="description-2">
+                    <a>I am a software developer and tester based in the United States, 
+                        and I have been building business applications for years, which 
+                        bring companies' ideas to life. I help convert a vision into meaningful 
+                        and useful software products. Having the ability to transform requirements
+                        into useful software helps me prioritize tasks, iterate fast and deliver faster.
+                        Take a look at my project work and let's see if we can work together on your 
+                        next project.</a>
+                </div>
+                <div class="section-skills">
+                    <!-- TOOD: UNIQUE WAY TO DISPLAY -->
+                    <a>TODO TODO TODO<a>
+                    </div>
             </div>
             
             <div class="content-block projects" id="section-projects">
                 <h2>projects</h2>
+                    <!-- TOOD: UNIQUE WAY TO DISPLAY -->
             </div>
             
             <div class="content-block contact" id="section-contact">
                 <h2>contact</h2>
             </div>
         </div>
+
 
 
         </div>
@@ -137,26 +146,8 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-    
-            // Handle the click event on sidebar links
-            $('.list-unstyled.components li a').on('click', function () {
-                $('.list-unstyled.components li').removeClass('active'); // Remove 'active' class from all items
-                $(this).closest('li').addClass('active'); // Add 'active' class to the clicked item
-            });
-    
-            // Handle the sidebar toggle button click event
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
+
     
 </body>
 </html>
