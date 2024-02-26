@@ -134,6 +134,7 @@ p {
 .description-2 {
     color: #6c757d;
     font-size: 1.4em;
+    padding-bottom: 2vh;
 }
 
 .description-3 {
@@ -161,9 +162,32 @@ p {
 
 .skills {
     padding-top: 8vh;
-    background-color: yellow;
-    height: 100vh;
-}
+    background-color: white;
+    min-height: 100vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  
+  .skills-img {
+    /* TODO: Find good background */
+    background-color: #dcdcdc;
+    border-radius: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+  
+  .skills-img img {
+    padding: .7vh; 
+    max-width: 100%;
+  }
+  
+
+
 
 .projects {
     padding-top: 8vh;
