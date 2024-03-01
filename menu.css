@@ -6,11 +6,7 @@ html {
 }
 
 body {
-    background: white;
-}
-
-p {
-    text-align: justify;
+    background: black;
 }
 
 /* Holds side bar and page */
@@ -22,6 +18,7 @@ p {
 hr {
     border: .2vh solid #000;
     width: 100%;
+    margin-top: 5vh;
 }
 
 ::selection {
@@ -41,9 +38,9 @@ hr {
 
 .center-layout {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    height: 100vh; /* Adjust as needed */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 
@@ -70,10 +67,9 @@ button {
 }
 
 
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
+    /* ---------------------------------------------------
+        CONTENT STYLE
+    ----------------------------------------------------- */
 #content {
     flex-grow: 1;
     width: calc(100% - 200px);
@@ -82,7 +78,7 @@ button {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: blue;
+    background-color: white;
 }
 
 /* Active when side bar closed */
@@ -97,41 +93,70 @@ button {
     padding: 8vh;
     padding-left: 12vh;
     padding-right: 12vh;
-    background-color: rgb(222, 219, 219);
+    background-color: white;
+    position: relative;
+}
+
+
+    /* ---------------------------------------------------
+        HOME STYLE
+    ----------------------------------------------------- */
+#home {
+    /*TODO: OVERLAY GRAY FOR BACKGROUND*/
+    background-image: url('Assets/coverBackground.webp');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat; 
 }
 
         /* ---------------------------------------------------
             ABOUT STYLE
         ----------------------------------------------------- */
 .about {
+    padding-top: 8vh;
     background-color: white;
-    height: 100vh;
+    min-height: 20vh;
 }
 
-#resume-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
+
+.about-me-text-img {
+    margin: 0 auto;
+    font-size: 1.3em;
+    width: 100%;
+    padding: 1em 0 1em 0 ;
+}
+
+
+.about-me-text-img img {
+    float: left;
+    width: 40%;
+    max-width: 12em;
+    height: 40%;
+    padding: 0 10px 0 0;
+}
+
+
 
   .resume-details {
-    padding-bottom: 5%;
+    margin-bottom: 3vh;
+    text-align: center;
   }
 
-  .resume-details a:first-child {
-    padding-right: 3vh;
-  }
 
-  .button-container {
-    display: flex;;
-    width: 100%;
-    flex-direction: column;
-  }
+  .text-container {
+    margin-top: .5vh;
+    flex: 1;
+    margin-right: 1em;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+}
 
-  .name-button, .email-button {
-    flex-grow: 1;
-    margin-bottom: 1vh;
-  }
+.name-button, .email-button {
+    margin-top: .5vh;
+    margin-right: 100vh;
+}
 
         /* ---------------------------------------------------
             SKILLS STYLE
@@ -140,10 +165,7 @@ button {
     padding-top: 8vh;
     background-color: white;
     min-height: 20vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding: 1em 0 1em 0 ;
   }
   
   .skills-img {
@@ -169,10 +191,7 @@ button {
     padding-top: 8vh;
     background-color: white;
     min-height: 20vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding: 1em 0 1em 0 ;
 }
 
         /* ---------------------------------------------------
@@ -182,6 +201,7 @@ button {
 .contact {
     padding-top: 8vh;
     height: 100vh;
+    background-color: white;
 }
 
 form {
@@ -214,28 +234,31 @@ input, textarea {
 #sidebar {
     width: 200px;
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    color: #fff;
     transition: all 0.3s;
     /* Horizonal and Vertical Placement*/
     text-align: center; 
-    padding-top: 10%;
+    background-color: black;
+    flex-shrink: 0;
+    color: #fff;
+}
+
+.sidebar-button {
+    background-color: transparent;  
+    border: none;  
 }
 
 
-#sidebar #name {
+#sidebar #sidebar-personal {
 	display: flex;
 	height: 35vh;
 	flex-direction: column;
     justify-content: flex-end;
     background-color: black;
     padding-bottom: 50px;
+    margin-top: 50px;
 }
 
-#sidebar #name img {
+#sidebar #sidebar-personal img {
     width: 8em; 
     height: 8em; 
     object-fit: cover;
@@ -252,13 +275,11 @@ input, textarea {
     background: white;
 }
 
-
 #sidebar ul.components {
     border-bottom: 1px solid #47748b;
 	display: flex;
 	height: 65vh;
 	flex-direction: column;
-    background-color: black; /* TODO: REMOVE */
 }
 
 
@@ -308,7 +329,7 @@ ul ul a {
     background-color: transparent;
     outline: none;
 }
-.menu-btn:focus {
+.menu-btn:focus {    
     box-shadow: 0 0 0 2px transparent; 
 }
 .menu-btn:hover {
