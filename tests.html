@@ -1,58 +1,23 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
 <head>
-    <title>
-        Wrapping an Image with the text
-    </title>
-      
-    <style>
-        body {
-            margin: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: green;
-        }
-        img {
-            float: left; 
-            margin: 5px;
-        }
-        p {
-            text-align: justify;
-            font-size: 25px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Text Regions with Filter</title>
+  <style>
+    .img1 {
+      filter: brightness(30%);
+      background-color: red;
+      width: 50%;
+      height: 25%;
+    }
+  </style>
 </head>
-  
 <body>
-    
-
-
-
-
-
-
-
-    <form action="https://api.web3forms.com/submit" method="POST">
-
-        <!-- Replace with your Access Key -->
-        <input type="hidden" name="access_key" value="391e70f3-a27a-4eca-96ea-135dd9071950">
-    
-        <!-- Form Inputs. Each input must have a name="" attribute -->
-        <p> Name </p>
-        <input type="text" name="name" required>
-        <p> Email </p>
-        <input type="email" name="email" required>
-        <textarea name="message" required></textarea>
-    
-        <!-- hCaptcha Spam Protection -->
-        <div class="h-captcha" data-captcha="true"></div>
-    
-        <button type="submit">Submit Form</button>
-    
-    </form>
-    <!-- Required for hCaptcha -->
+  <div class="img1">
+    <a> Hello </a>
+    <img src="Assets/keyboardProject.jpg" style="width: 100%; height: 50%;">
+    <a> Hello </a>
+    </div>
 </body>
-  
 </html>
