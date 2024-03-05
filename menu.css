@@ -227,9 +227,14 @@ button {
 }
 
 .project-box p {
-    color: blue; /* Adjust the color for <p> text as needed */
-    font-size: 14px; /* Optional: Adjust font size */
-    line-height: 1.5; /* Optional: Adjust line height */
+    font-size: 12px; /* Optional: Adjust font size */
+    /* line-height: 1.5;  */
+}
+
+.project-box ul {
+    padding-left: 20px;
+    font-size: 12px; /* Optional: Adjust font size */
+    /* line-height: 1.5;  */
 }
 
 
