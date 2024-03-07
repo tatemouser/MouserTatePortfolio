@@ -93,7 +93,7 @@ button {
     padding: 8vh;
     padding-left: 12vh;
     padding-right: 12vh;
-    background-color: white;
+    background-color: green;
     position: relative;
 }
 
@@ -418,5 +418,36 @@ a:focus {
 @media screen and (max-width: 600px) {
     form {
         width: 100%;
+    }
+}
+
+/* Responsive styles for smaller screens */
+
+/* Adjust font size for smaller screens */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: blue; /* Change background color for smaller screens */
+    }
+
+    .wrapper {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    #content {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .content-container {
+        padding: 4vh; /* Adjusted padding for smaller screens */
+        padding-left: 6vh;
+        padding-right: 6vh;
+    }
+    
+    .about-me-text-img img {
+        float: none; /* Clear float on smaller screens */
+        width: 100%; /* Make the image fill the container width */
+        max-width: none; /* Remove max-width constraint */
+        height: auto; /* Maintain aspect ratio */
+        padding: 0; /* Remove padding */
     }
 }
